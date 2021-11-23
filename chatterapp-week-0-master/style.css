@@ -1,0 +1,50 @@
+/* Global */
+
+/* * {margin: 0%;padding:0%;} */
+
+html, body {
+    min-height: 100%;
+}
+/* #channel_view #chat_section{ position:fixed ;} */
+
+
+/* App bar */
+.headbar{
+    background-color:grey ;
+    font-size: large;
+    padding: auto;
+    height: 60px;
+    line-height: auto;
+    /* text-align: center; */
+}
+
+.headbar>span {color:#00838f;font-size: large;}
+
+
+
+/* Channels list */
+#channel_view {
+    position: absolute ;
+    width: 300px;
+    height: 100vh;
+    text-align: center;
+    /* height: 100vh; */
+    border-right: 3px solid gray;
+}
+
+.list_channel {
+    list-style-type:none;
+    background-color: goldenrod;
+    border: 2px solid gray;
+}
+
+
+
+
+/* Messages */
+#chat_section {
+    position: absolute ;
+    left: 320px;
+    height: 100vh;
+    /* left: 400px; */
+}

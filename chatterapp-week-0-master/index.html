@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Chatter|App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         * {
@@ -22,55 +24,80 @@
     </style>
 </head>
 <body>
-    <!--the app’s name -->
-    <h1>Chatter | App</h1>
 
-    <!--category 1 favorite :: h2 -->
-    <h2>Favorites</h2>
-            <strong>Mr beast</strong> <small>11:04</small>
-            <br>
-            <strong>Joe hattab</strong>  <small>08:50</small>
+    <section id = "channel_view">
+            <!--the app’s name -->
+            <div class="headbar">
+                <img    src="https://ip.lfe.mw.tum.de/sections/moocus.png" 
+                            style="height: 52px;"
+                            alt="Moocus, a  duck, will be our app logo" >
+                     <!-- <span>Chatter | App </span> -->
+                     <h1>Chatter | App</h1> 
+                
+            </div>
+            <!--category 1 favorite :: h2 -->
+            <h2>Favorites</h2>
+            <ul class = “channel-list” >
+                <li class="list_channel">
+                    <span class="channel_list"><strong>Mr beast</strong></span> <span><small>11:04</small></span>
+                </li>
+                <li class="list_channel">
+                    <span><strong>Joe hattab</strong></span>  <span><small>08:50</small></span>
+                </li>
+            </ul>
+            <!--category 2 favorite :: h2 -->
+            <h2>Regular</h2>
+                <ul class = “channel-list” >
+                    <li class="list_channel" >
+                        <span class="channel_list"><strong>WeatherChannel</strong></span>  <span class="channel_list"><small>Yesterday</small></span>
+                    </li>
+                    <li class="list_channel" >
+                        <span class="channel_list"><strong>SevenContinents</strong></span>  <span class="channel_list"><small>8 November 2021</small></span>
+                    </li> 
+                </ul>
+    </section>
 
-    <!--category 2 favorite :: h2 -->
-    <h2>Regular</h2>
-            <strong>Nba highlights</strong>  <small>Yesterday</small>
-            <br>
-            <strong>Amigos code</strong>  <small>8 November 2021</small> 
+    <section id = "chat_section">
 
-     <!-- example of category 1 : favorite exmpl : Mr beast :: h2 -->
-     <!--Chat history for category 1-->
-    <h1>Mr beast</h1>
-        <button>Favorite</button>
+        <div class="headbar">
+                <h1>MeetUp <button>Favorite</button></h1>
+        </div>
 
-        <!--fictional chat-->
+        <div id="chat-area">
+                <div class="message_area">
+                    <h2>Jimmy</h2>
+                                <!--message content -->
+                                <p>romatic beverage commonly prepared by pouring hot or boiling water over cured leaves 
+                                    of the Camellia sinensis, an evergreen shrub (bush) native to Asia </p>
+                                <!--the date when a message was committed below each message -->
+                                <small>23:50</small>
+                </div>
 
-        <!--chat partners-->
-            <h2>Jimmy</h2>
-                <!--message content -->
-                <p>the last episode was freaking amazing , I almost won this time </p>
-                <!--the date when a message was committed below each message -->
-                <small>23:50</small>
+                <div class="message_area">
+                    <h2>Chandller</h2>
+                            <!--message content -->
+                                <p>A carbonated soft drink produced by The Coca-Cola Company. 
+                                    The drink's name refers to two of its original ingredients</p>
+                                <!--the date when a message was committed below each message -->
+                                <small>23:56</small>
+                </div>
 
-        <!--chat partners-->
-            <h2>Chandller</h2>
-            <!--message content -->
-                <p>I always suck , Im the fisrt to be eliminated</p>
-                <!--the date when a message was committed below each message -->
-                <small>23:56</small>
-
-            <h2>Chris</h2>
-                <!--message content -->
-                <p>I was the least favorite but I got lucky </p>
-                <!--the date when a message was committed below each message -->
-                <small>23:56</small>
-        <br><br>
-
-        <!-- submit messages -->
-            <input type="text">
-
-        
-        <!--Send messages-->
-            <button>Send</button>
-
+                <div class="message_area">
+                    <h2>Chris</h2>
+                            <!--message content -->
+                            <p>An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis,
+                                 an evergreen shrub (bush) native to Asia</p>
+                            <!--the date when a message was committed below each message -->
+                            <small>23:56</small>
+                        <br><br>
+                </div>
+        </div>
+        <div>
+                <!-- submit messages -->
+                    <input type="text">
+                <!--Send messages-->
+                    <button>Send</button>
+        </div>
+    </section>
 </body>
 </html>
